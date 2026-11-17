@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pranu Kumari | BCA Fresher Portfolio</title>
+<style>
+:root{--ink:#18213b;--muted:#667085;--blue:#5b5ce2;--cyan:#20b8c8;--pale:#f3f5ff;--white:#fff}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:#fbfcff;line-height:1.65}
+nav{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e9ecf5}
+.nav{max-width:1100px;margin:auto;padding:14px 24px;display:flex;justify-content:space-between;align-items:center}
+.brand{font-weight:800;font-size:1.15rem;color:var(--blue)} nav a{color:var(--ink);text-decoration:none;margin-left:20px;font-size:.92rem;font-weight:600}
+nav a:hover{color:var(--blue)}
+section{max-width:1100px;margin:auto;padding:76px 24px}
+.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:45px;align-items:center;min-height:570px}
+.tag{display:inline-block;padding:7px 14px;border-radius:30px;background:#e9fafa;color:#087f8c;font-weight:700;font-size:.85rem}
+h1{font-size:clamp(2.6rem,6vw,4.5rem);line-height:1.08;margin:18px 0}
+h1 span{background:linear-gradient(90deg,var(--blue),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.12rem;color:var(--muted);max-width:620px}
+.btn{display:inline-block;margin:12px 10px 0 0;padding:12px 20px;border-radius:12px;background:var(--blue);color:white;text-decoration:none;font-weight:700}
+.btn.secondary{background:white;color:var(--blue);border:1px solid #d9dcff}
+.photo-wrap{background:linear-gradient(145deg,#e8eaff,#dff9fa);padding:12px;border-radius:32px;box-shadow:0 24px 60px #252e5b20}
+.photo-wrap img{display:block;width:100%;border-radius:24px;object-fit:cover}
+h2{font-size:2rem;margin:0 0 22px}
+.sub{color:var(--muted);margin-top:-12px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{background:white;border:1px solid #e9ecf5;border-radius:18px;padding:24px;box-shadow:0 8px 28px #1c2b5510}
+.card h3{margin:0 0 8px}
+.card p{color:var(--muted);margin:0}
+.skills{display:flex;flex-wrap:wrap;gap:12px}
+.skill{background:var(--pale);color:#4246a8;padding:10px 16px;border-radius:30px;font-weight:650}
+.project{border-left:4px solid var(--cyan)}
+.meta{font-size:.9rem;color:var(--muted);margin:8px 0}
+.contact{background:linear-gradient(135deg,#222c62,#5556c9);color:white;border-radius:26px;padding:38px}
+.contact p{color:#e4e7ff}
+.contact a{color:white}
+footer{text-align:center;padding:25px;color:var(--muted);font-size:.9rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:55px}.photo-wrap{max-width:340px;grid-row:1}.grid{grid-template-columns:1fr}nav .links{display:none}section{padding:55px 20px}}
+</style>
+</head>
+<body>
+<nav><div class="nav"><div class="brand">Pranu Kumari.</div><div class="links"><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></div></nav>
+<main>
+<section class="hero">
+<div>
+<span class="tag">BCA Student · Fresher</span>
+<h1>Hello, I'm<br><span>Pranu Kumari</span></h1>
+<p class="lead">An enthusiastic BCA student interested in technology, web development, and learning how software can solve everyday problems. I am building my skills through coursework, practical training, and beginner-friendly projects.</p>
+<a class="btn" href="#projects">Explore My Work</a>
+<a class="btn secondary" href="#contact">Contact Me</a>
+</div>
+<div class="photo-wrap"><img src="profile.png" alt="Professional portrait of Pranu Kumari"></div>
+</section>
+<section id="about">
+<h2>About Me</h2><p class="sub">A little introduction</p>
+<div class="card"><p>I am pursuing a Bachelor of Computer Applications (BCA) at MGM College IT &amp; Management. I have also completed a one-year ADCA training program through an offline IT Computer Institute. I enjoy learning computer applications and developing my technical knowledge through hands-on practice. I am looking for an opportunity to learn, contribute, and grow as a fresher.</p></div>
+</section>
+<section id="education">
+<h2>Education &amp; Training</h2>
+<div class="grid">
+<div class="card"><h3>Bachelor of Computer Applications (BCA)</h3><div class="meta">MGM College IT &amp; Management · 2024–2027</div><p>Currently pursuing undergraduate studies.</p></div>
+<div class="card"><h3>ADCA – Advanced Diploma in Computer Applications</h3><div class="meta">Offline IT Computer Institute · 1 Year</div><p>Completed a one-year computer applications training program.</p></div>
+</div>
+</section>
+<section id="skills">
+<h2>Skills</h2><p class="sub">Technologies and computer skills I am developing</p>
+<div class="skills"><span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript (Basics)</span><span class="skill">Computer Fundamentals</span><span class="skill">MS Office</span><span class="skill">ADCA</span><span class="skill">GitHub (Basics)</span></div>
+</section>
+<section id="projects">
+<h2>Projects</h2><p class="sub">Academic / personal practice</p>
+<div class="card project"><h3>Student Management System</h3><div class="meta">HTML · Beginner-level project</div><p>A simple project concept for organizing student information such as names, roll numbers, courses, and related details. Created as a practical learning project while developing my web skills.</p><a class="btn" target="_blank" rel="noopener" href="https://github.com/Pranu1922/student-management-system">View on GitHub</a></div>
+</section>
+<section id="contact">
+<div class="contact"><h2>Let's Connect</h2><p>I am open to learning opportunities, internships, and entry-level roles where I can improve my skills.</p>
+<p><strong>Email:</strong> <a href="mailto:pranukumari1922@gmail.com">pranukumari1922@gmail.com</a><br>
+<strong>Phone:</strong> <a href="tel:7033099923">7033099923</a><br>
+<strong>Location:</strong> Patna, Bihar<br>
+<strong>GitHub:</strong> <a target="_blank" rel="noopener" href="https://github.com/Pranu1922">github.com/Pranu1922</a></p></div>
+</section>
+</main>
+<footer>© 2026 Pranu Kumari · BCA Fresher Portfolio</footer>
+</body></html>
